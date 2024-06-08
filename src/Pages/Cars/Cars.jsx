@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import "./Cars.css"
+import { IoIosSettings } from "react-icons/io";
 
 const Cars = () => {
 
@@ -14,8 +15,11 @@ const Cars = () => {
     // console.log(allCars?.data?.map(data => data?.rates?.weekly))
     return (
         <div className="pt-20 ">
-        
-            <div className="p-2 border">
+        { !allCars?.data &&<div className="flex justify-center mt-5">
+                <h1 className="text-8xl animate-spin"><IoIosSettings />
+                </h1>
+            </div>}
+            <div className="p-2">
             {
                 allCars?.data?.map(cars =>
                     <>

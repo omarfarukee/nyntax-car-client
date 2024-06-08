@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { NavLink } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
+import { IoIosSettings } from "react-icons/io";
 
 
 const ChargesSummary = () => {
@@ -38,9 +39,14 @@ const ChargesSummary = () => {
             addToast('Failed to delete request', { appearance: 'error' });
         }
     };
+    
+    console.log(allChargesSummary?.data?.length)
     return (
         <div className="pt-20">
-            
+           { !allChargesSummary?.data &&<div className="flex justify-center mt-5">
+                <h1 className="text-8xl animate-spin"><IoIosSettings />
+                </h1>
+            </div>}
             <div className="p-5">
                 {
                     allChargesSummary?.data?.map(charge =>
