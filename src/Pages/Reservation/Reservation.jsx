@@ -42,7 +42,7 @@ const Reservation = () => {
         }
         console.log(fromData)
         try {
-            const response = await fetch('http://localhost:5000/api/create-chargeSummary', {
+            const response = await fetch('https://nyntax-car-server.vercel.app/api/create-chargeSummary', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

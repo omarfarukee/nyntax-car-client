@@ -34,7 +34,7 @@ const routes = createBrowserRouter([
                 path: '/recit/:id',
                 element: <RecitPage/>,
                 loader:async ({params}) =>{
-                    return fetch(`http://localhost:5000/api/chargeSummary/${params?.id}`)
+                    return fetch(`https://nyntax-car-server.vercel.app/api/chargeSummary/${params?.id}`)
                 }
             },
         ],

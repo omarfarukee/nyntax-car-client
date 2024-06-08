@@ -8,7 +8,7 @@ const ChargesSummary = () => {
     const { data: allChargesSummary = [], refetch } = useQuery({
         queryKey: ['allChargesSummary'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/api/chargesSummary/Fetch`);
+            const res = await fetch(`https://nyntax-car-server.vercel.app/api/chargesSummary/Fetch`);
             const data = await res.json();
             return data;
         }
@@ -16,7 +16,7 @@ const ChargesSummary = () => {
 
     const handleDeleteRequest = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/charge/${id}`, {
+            const response = await fetch(`https://nyntax-car-server.vercel.app/api/charge/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
