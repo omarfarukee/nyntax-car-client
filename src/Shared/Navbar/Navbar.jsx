@@ -29,9 +29,9 @@ const Navbar = () => {
             <NavLink to="/"><img src={logo} alt="" /></NavLink>
             </div>
             <div className="flex gap-5 text-lg font-bold">
-                {/* <div>
+                <div>
                     <NavLink to="/">HOME</NavLink>
-                </div> */}
+                </div>
                 <div>
                     <NavLink to="/reservation">RESERVATION</NavLink>
                 </div>

@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useToasts } from "react-toast-notifications";
 
 const Reservation = () => {
-    const { register, handleSubmit, formState: { errors }, } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset} = useForm();
     const [additionalCharges, setAdditionalCharges] = useState([]);
     const { addToast } = useToasts();
     const handleCheckboxChange = (e) => {
@@ -55,7 +55,7 @@ const Reservation = () => {
             if (responseData.success === true) {
 
                 addToast('Charges Summary created succesfully', { appearance: 'success' })
-                // reset();
+                reset();
             } else {
                 addToast(`${responseData.message}`, { appearance: 'error' })
 
@@ -81,7 +81,7 @@ const Reservation = () => {
                     <div className="flex justify-between gap-3">
                         <div>
                             <h1 className="text-2xl">Reservation Details</h1>
-                            <div className="p-3 border w-96 h-[610px]">
+                            <div className="p-3 border w-96 h-[700px]">
                                 <div className="mb-3">
                                     <label htmlFor="">Reservation ID</label>
                                     <input type="text" {...register("reservation_id", {
@@ -208,7 +208,7 @@ const Reservation = () => {
                         <div>
                             <h1 className="text-2xl">Vehicle Information</h1>
 
-                            <div className="p-3 border w-96 h-[610px]">
+                            <div className="p-3 border w-96 h-[700px]">
                                 <div className="mb-2">
                                     <label htmlFor="">Vehicle ID</label>
                                     <select className="w-full h-12 border" {...register("vehicle_id", {

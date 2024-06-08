@@ -40,6 +40,7 @@ const ChargesSummary = () => {
     };
     return (
         <div className="pt-20">
+            
             <div className="p-5">
                 {
                     allChargesSummary?.data?.map(charge =>
@@ -110,6 +111,7 @@ const ChargesSummary = () => {
                         </>)
                 }
             </div>
+            
         </div>
     );
 };
