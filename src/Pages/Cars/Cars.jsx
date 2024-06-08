@@ -11,7 +11,7 @@ const Cars = () => {
             return data;
         }
     });
-    console.log(allCars?.data)
+    // console.log(allCars?.data?.map(data => data?.rates?.weekly))
     return (
         <div className="pt-20 ">
         

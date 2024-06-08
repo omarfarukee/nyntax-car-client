@@ -29,14 +29,17 @@ const Navbar = () => {
             <NavLink to="/"><img src={logo} alt="" /></NavLink>
             </div>
             <div className="flex gap-5 text-lg font-bold">
-                <div>
+                {/* <div>
                     <NavLink to="/">HOME</NavLink>
-                </div>
+                </div> */}
                 <div>
                     <NavLink to="/reservation">RESERVATION</NavLink>
                 </div>
                 <div>
                     <NavLink to="/cars">CARS-INFO</NavLink>
+                </div>
+                <div className="uppercase">
+                    <NavLink to="/chargesSummary">Charges-Summary</NavLink>
                 </div>
             </div>
 
