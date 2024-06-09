@@ -1,7 +1,13 @@
 ## how to run in local host -
 
-- firat clone the repository 
-- the open the repository on vs code 
-- open terminal select git bash and put "yarn" command 
-- after that put "yarn dev" command
-- local host successfully running on browser
+- First clone the repository 
+- Open the repository on vs code 
+- Open terminal select git bash
+  
+## Installation
+Install these 
+```bash
+  yarn
+```
+- After that enter "yarn dev" command.
+- The localhost running on your browser successfully.
