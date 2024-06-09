@@ -107,7 +107,7 @@ const ChargesSummary = () => {
                                     <h1 className="">{charge?.grandTotal} $</h1>
                                 </div>
                                 <div className="mt-5">
-                                  <NavLink to={`/recit/${encodeURIComponent(charge?._id)}`}><button className="w-40 p-2 bg-blue-300 border rounded">See recit</button></NavLink>  
+                                  <NavLink to={`/recit/${encodeURIComponent(charge?._id)}`}><button className="w-40 p-2 bg-blue-300 border rounded">See Receipt</button></NavLink>  
                                 </div>
                                 <div className="mt-2">
                                     <button onClick={() => handleDeleteRequest(charge?._id)} className="w-40 p-2 bg-red-300 border rounded">Delete</button>

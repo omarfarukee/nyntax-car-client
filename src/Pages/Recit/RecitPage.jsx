@@ -22,7 +22,7 @@ const RecitPage = () => {
         <div className="pt-20">
             <div className="flex justify-center mt-5">
                 <button onClick={handleDownloadRecit} className="w-40 p-3 text-white bg-blue-600 rounded-md">
-                    Download recit
+                    Download Receipt
                 </button>
             </div>
             <div className="flex justify-center mt-5 mb-10">
@@ -30,7 +30,7 @@ const RecitPage = () => {
                     <div className="flex justify-center border-b-2">
                         <div className="flex flex-col items-center">
                               <img src={logo} alt="Logo" />
-                              <h1 className="text-lg font-bold">Renter info</h1>
+                              <h1 className="text-lg font-bold">Rent info</h1>
                         </div>
                       
                     </div>
