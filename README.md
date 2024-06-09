@@ -1,5 +1,16 @@
-### server side link- 
+## server side link- 
 - https://github.com/omarfarukee/nyntax-car-server
+## Technology used
+- React
+- React-router-Dom
+- Javascript
+- Tailwind css
+- react-hook-form
+- react-query
+- react-toast-notifications
+- jspdf
+- react-icons
+
 ## how to run in local host -
 
 - First clone the repository 
