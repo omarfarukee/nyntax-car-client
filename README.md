@@ -5,7 +5,7 @@
 - Open terminal select git bash
   
 ## Installation
-Install these 
+Install this 
 ```bash
   yarn
 ```
