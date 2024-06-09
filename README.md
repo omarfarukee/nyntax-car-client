@@ -1,6 +1,6 @@
 ## server side link- 
 - https://github.com/omarfarukee/nyntax-car-server
-## Technology used
+## Technology used in front-end
 - React
 - React-router-Dom
 - Javascript
